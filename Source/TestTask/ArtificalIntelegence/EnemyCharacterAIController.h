@@ -20,7 +20,7 @@ class TESTTASK_API AEnemyCharacterAIController : public AAIController
 public:
 	AEnemyCharacterAIController();
 	
-	virtual void Possess(APawn* InPawn) override;
+	virtual void OnPossess(APawn* InPawn) override;
 	virtual void Tick(float DeltaSeconds) override;
 	
 	UFUNCTION()

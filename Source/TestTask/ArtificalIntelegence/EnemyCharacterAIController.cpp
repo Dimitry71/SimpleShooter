@@ -128,9 +128,9 @@ void AEnemyCharacterAIController::ChooseNearAmmoPickup()
 }
 
 
-void AEnemyCharacterAIController::Possess(APawn* InPawn)
+void AEnemyCharacterAIController::OnPossess(APawn* InPawn)
 {
-	Super::Possess(InPawn);
+	Super::OnPossess(InPawn);
 	AEnemyAICharacter* EnemyCharacter = Cast<AEnemyAICharacter>(InPawn);
 	AAIController* Controller = Cast<AAIController>(this);
 	//Controller->OnMoveCompleted.AddDynamic(this, &AEnemyCharacterAIController::OnMoveCompleted);
